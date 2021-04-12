@@ -35,7 +35,7 @@ logging.basicConfig(level=logging.DEBUG, filename=configs['user_stats_log'],
 
 # sometimes the API returns an error
 try:
-    res = requests.get('https://stats.foldingathome.org/api/donor/' + configs['fah_user'])
+    res = requests.get('https://statsclassic.foldingathome.org/api/donor/' + configs['fah_user'])
 except Exception as e:
     logging.exception("Exception occurred")
 
